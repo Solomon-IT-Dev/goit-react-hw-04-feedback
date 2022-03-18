@@ -5,7 +5,7 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
     return (
         <FeedbackContainer>
             {options.map(option => (
-                <FeedbackBtn key={option} onClick={() => onLeaveFeedback(option)}>{option}</FeedbackBtn>
+                <FeedbackBtn key={option} name={option} onClick={onLeaveFeedback}>{option}</FeedbackBtn>
             ))}
         </FeedbackContainer>   
     );
